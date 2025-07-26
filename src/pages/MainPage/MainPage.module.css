@@ -1,0 +1,148 @@
+.pageContent {
+  position: relative;
+  min-height: 100vh;        /* чтобы охватить весь экран */
+  padding-bottom: 200px;    /* запас под footer */
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mainimage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.Image {
+  width: 100%;
+  height: auto;
+  max-height: 730px;
+  display: block;
+}
+
+.mainimage h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 94px;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.middle {
+  width: 100%;
+  max-width: 1455px;
+  margin-top: 60px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.middle h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 77.4%;
+  color: #000000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.middle p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 120%;
+  max-width: 1250px;
+
+}
+
+.offerRow {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  padding-left: 5%;
+}
+
+.specorder {
+  position: relative;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderImage {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.orderText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.treeImage {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.treeImage img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.applyButton {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF9000; 
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;     
+  font-weight: 600;
+  padding: 16px 32px;  
+  border: none;
+  border-radius: 12px;       
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: transform .1s;
+}
+
+.applyButton:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}

@@ -1,0 +1,36 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left h2 {
+    width: 50%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.middle {
+    width: 50%;
+    font-size: 18px;
+    border-left: 4px gray solid;
+    padding-left: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 18px;
+}

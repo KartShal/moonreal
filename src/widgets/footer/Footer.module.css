@@ -1,0 +1,14 @@
+.Footer {
+    display: block;
+    background-color: rgba(215, 215, 215, 1);
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left h2 {
+    width: 50%;
+    font-size: 24px;
+    font-weight: 600;
+}
