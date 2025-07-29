@@ -3,15 +3,12 @@
   margin: 0;
   padding: 0;
 }
-
-html, body, #root {
-  height: 100%;
-}
-
 .app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   margin-left: 8%;
   margin-right: 8%;
+}
+
+.active {
+    color: rgba(132, 40, 218, 0.932) !important;
+    font-weight: 600;
 }

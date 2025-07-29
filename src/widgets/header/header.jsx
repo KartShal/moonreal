@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css'
 
 const Header = () => {
     return (
+        <>
         <div className={styles.Header}>
         <div className={styles.left}>
             <img src="./assets/country-house 1.svg" alt="Home" />
@@ -16,14 +18,16 @@ const Header = () => {
             <img src="./assets/telephone 1.svg" alt="" />
             <p>+7 902 471-07-79</p>
         </div>
-        <div className={styles.NavBar}>
+        </div>
+                <div className={styles.NavBar}>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li><NavLink to={"/"}>Главная</NavLink></li>
+                <li><NavLink to="/cards">Услуги</NavLink></li>
+                <li>Проекты</li>
+                <li>Отзывы</li>
             </ul>
         </div>
-        </div>
+        </>
     )
 };
 export default Header

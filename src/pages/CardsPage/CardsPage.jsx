@@ -10,7 +10,6 @@ function CardPage() {
         <Card name='Из Дерева' img='/assets/home2.svg'/>
         <Card name='Из Кирпича'img='/assets/home3.svg'/>
         <Card name='Из Пластик'img='/assets/home4.svg'/>
-
         </div>
     </div>
     )

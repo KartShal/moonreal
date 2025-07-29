@@ -3,7 +3,7 @@ import CardsPage from './pages/CardsPage/CardsPage.jsx';
 import MainPage from './pages/MainPage/MainPage.jsx';
 import Footer from './widgets/footer/Footer';
 import Header from './widgets/header/header.jsx';
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes, } from "react-router-dom"
 
 function App() {
   return (
