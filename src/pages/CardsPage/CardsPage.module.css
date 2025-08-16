@@ -15,3 +15,15 @@
     gap: 40px;
     flex-wrap: wrap;
 }
+
+.CardsPagesecond {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.CardsPagesecond h2 {
+    text-decoration: underline;
+}
