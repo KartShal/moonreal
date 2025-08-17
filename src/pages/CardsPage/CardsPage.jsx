@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CardsPage.module.css'
 import Card from './components/Card/Card';
 import { useDispatch, useSelector } from 'react-redux';
-import { getHomes } from './service/service';
+import { getHomes, postHome } from './service/service';
 import { getHomesActionCreater } from '../../store/reducer/homereducer';
 
 function CardPage({store}) {
@@ -12,6 +12,33 @@ function CardPage({store}) {
     const secondselector = useSelector((state) => state.homeReducerService.cardsListPagesecond
 );
         const dispatch = useDispatch();
+
+        const [name, setName] = useState();
+        const [desc, setDesc] = useState();
+
+        console.log(name, desc);
+        
+
+        const nameRef = React.useRef();
+        const descRef = React.useRef();
+
+        const onChangeHandler = () => {
+            setName(nameRef.current.value)
+            setDesc(descRef.current.value)
+        }
+
+        const postNewHomeHandler = async () => {
+            const newHome = {
+                name: name,
+                desc: desc,
+                img: "/assets/home2.svg",
+            };
+            await postHome(newHome);
+            await getHomes().then(({ homes, materials }) => 
+        dispatch(getHomesActionCreater(homes, materials)))
+            nameRef.current.value = "";
+            descRef.current.value = "";
+        }
 
         useEffect(() => {
             getHomes().then(({ homes, materials }) => 
@@ -23,6 +50,11 @@ function CardPage({store}) {
         <>
     <div className={styles.CardsPage}>
         <h2>Строительство Коттеджей</h2>
+        <div className={styles.inputs}>
+            <input placeholder="Название..." ref={nameRef} onChange={onChangeHandler}/>
+            <input placeholder="Описание..." ref={descRef} onChange={onChangeHandler}/>
+            <button onClick={postNewHomeHandler}>Отправить</button>
+        </div>
         <div className={styles.cardsList}>
             {
                 selector.map((home)=>(

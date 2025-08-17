@@ -8,3 +8,7 @@ export const getHomes = async () => {
 
     return { homes: homes.data, materials: materials.data };
 };
+
+export const postHome = (payLoad) => {
+    return api(BASE_URL).post('/home', payLoad)
+}
