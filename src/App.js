@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes, } from "react-router-dom"
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage.jsx';
 import { Provider } from "react-redux";
 import store from './store/redux-store.jsx';
+import CardID from './pages/CardsPage/CardID/CardID.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage/>}/>
         <Route path='/cards' element={<CardsPage />}/>
+        <Route path='/cards/:id' element={<CardID/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
       </Routes>
         <Footer />

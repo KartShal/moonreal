@@ -58,7 +58,7 @@ function CardPage({store}) {
         <div className={styles.cardsList}>
             {
                 selector.map((home)=>(
-                    <Card name={home.name} img={home.img}/>
+                    <Card name={home.name} img={home.img} id={home.id}/>
                 ))
             }
         </div>
@@ -68,7 +68,7 @@ function CardPage({store}) {
         <div className={styles.cardsList}>
             {
                 secondselector.map((home)=>(
-                    <Card name={home.name} img={home.img}/>
+                    <Card name={home.name} img={home.img} id={home.id}/>
                 ))
             }
         </div>

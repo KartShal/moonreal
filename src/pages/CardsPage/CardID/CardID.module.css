@@ -1,0 +1,24 @@
+.CardID {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(0, 68, 255);
+    border-radius: 12px;
+    min-height: 70vh;
+    padding: 25px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.CardID h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.CardID p {
+    font-size: 18px;
+    font-weight: 500;
+}
