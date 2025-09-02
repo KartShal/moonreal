@@ -12,3 +12,7 @@ export const getMaterialById = (id) => {
 export const putHomeById = (id, data) => {
     return api(BASE_URL).put(`/home/${id}`, data)
 }
+
+export const deleteForId = (id) => {
+    return api(BASE_URL).delete(`/home/${id}`)
+}

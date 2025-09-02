@@ -87,3 +87,15 @@
     border: 1px solid gray;
     outline: none;
 }
+
+
+.back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: red;
+    font-weight: 600;
+    text-decoration: none;
+    left: 25px;
+}
