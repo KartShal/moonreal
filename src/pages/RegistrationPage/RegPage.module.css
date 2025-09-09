@@ -1,0 +1,60 @@
+.RegPage {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    background-color: rgba(126, 126, 126, 0.151);
+    padding: 20px;
+    height: 60vh;
+    padding-top: 30px;
+}
+
+.RegPage h1 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.password {
+    width: 100%;
+    position: relative;
+}
+
+.password input{
+    width: 100%;
+}
+
+.eye {
+    position: absolute; 
+    right: 5px;
+    z-index: 2;
+    top: 5px;
+}
+
+.RegPage button {
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid white;
+    border-color: gray;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+.inputs input {
+    border-radius: 7px;
+    border: 1px solid gray;
+    outline: none;
+    height: 25px;
+    padding: 5px;
+}
+
+.inputs input:focus {
+    border: 1px solid gray;
+}

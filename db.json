@@ -1,54 +1,66 @@
 {
   "home": [
-  {
-    "name": "Из Газобетона",
-    "desc": "Обработка газобетонным блокам не нужна. Для отделки можно применять любые материалы, которые компания застройщик предложит выбрать. Возведение дома из газобетонного блока занимает меньше времени, чем аналогичные работы с кирпичом, брусом, иными материалами. ",
-    "img": "/assets/home1.svg",
-    "id": "1"
-  },
-  {
-    "name": "Из Дерева",
-    "desc": "Good",
-    "img": "/assets/home2.svg",
-    "id": "2"
-  },
-  {
-    "name": "Из Кирпича",
-    "desc": "Good",
-    "img": "/assets/home3.svg",
-    "id": "3"
-  },
-  {
-    "name": "Из Пластик",
-    "desc": "Good",
-    "img": "/assets/home4.svg",
-    "id": "4"
-  }
-],
- "material": [
-  {
-    "name": "Газобетон",
-    "desc": "Good",
-    "img": "/assets/gas.svg",
-    "id": "1"
-  },
-  {
-    "name": "Дерево",
-    "desc": "Good",
-    "img": "/assets/Wood.svg",
-    "id": "2"
-  },
-  {
-    "name": "Цемент",
-    "desc": "Good",
-    "img": "/assets/Cement.svg",
-    "id": "3"
-  },
-  {
-    "name": "Арматура",
-    "desc": "Good",
-    "img": "/assets/Armature.svg",
-    "id": "4"
-  }
-]
+    {
+      "name": "Из Газобетона",
+      "desc": "Обработка газобетонным блокам не нужна. Для отделки можно применять любые материалы, которые компания застройщик предложит выбрать. Возведение дома из газобетонного блока занимает меньше времени, чем аналогичные работы с кирпичом, брусом, иными материалами. ",
+      "img": "/assets/home1.svg",
+      "id": "1"
+    },
+    {
+      "name": "Из Дерева",
+      "desc": "Good",
+      "img": "/assets/home2.svg",
+      "id": "2"
+    },
+    {
+      "name": "Из Кирпича",
+      "desc": "Good",
+      "img": "/assets/home3.svg",
+      "id": "3"
+    },
+    {
+      "name": "Из Пластик",
+      "desc": "Good",
+      "img": "/assets/home4.svg",
+      "id": "4"
+    }
+  ],
+  "material": [
+    {
+      "name": "Газобетон",
+      "desc": "Good",
+      "img": "/assets/gas.svg",
+      "id": "1"
+    },
+    {
+      "name": "Дерево",
+      "desc": "Good",
+      "img": "/assets/Wood.svg",
+      "id": "2"
+    },
+    {
+      "name": "Цемент",
+      "desc": "Good",
+      "img": "/assets/Cement.svg",
+      "id": "3"
+    },
+    {
+      "name": "Арматура",
+      "desc": "Good",
+      "img": "/assets/Armature.svg",
+      "id": "4"
+    }
+  ],
+  "users": [
+    {
+      "email": "smallPV@gmail.com",
+      "password": "$2a$10$rVHxNcAkUcgvEXVU0Ck3XexBkp5StaZ48mTy8xeu6kqBpWnX6PZHy",
+      "id": 1
+    },
+    {
+      "email": "emal@gmail.com",
+      "password": "$2a$10$MaF9VxwTcjekQSTRJJanb.n/a2x1dfbhsra0dHSBqRdFlGa2psuRG",
+      "id": 2
+    }
+  ]
 }

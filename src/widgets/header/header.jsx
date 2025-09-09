@@ -1,7 +1,16 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import styles from './Header.module.css'
 
 const Header = () => {
+
+    const user = localStorage.getItem("user");
+    const navigate = useNavigate()
+
+    const logOut = () => {
+        localStorage.removeItem("user");
+        navigate("/register")
+    }
+
     return (
         <>
         <div className={styles.Header}>
@@ -16,7 +25,7 @@ const Header = () => {
         <div className={styles.right}>
             <img src="./assets/vk-1.svg" alt="" />
             <img src="./assets/telephone 1.svg" alt="" />
-            <p>+7 902 471-07-79</p>
+            <button onClick={user != null ? logOut : () => navigate("/register") }>{user != null ? 'Выйти' : 'Регистрация'}</button>
         </div>
         </div>
                 <div className={styles.NavBar}>
