@@ -1,7 +1,7 @@
 import axios from 'axios'; 
 
 const showNotification = (message) => {
-    alert({ message });
+    alert(`${ message }`);
 }; 
 
 const handleError = (error) => {
@@ -12,7 +12,7 @@ const handleError = (error) => {
 
 
 if (error.response.status === 401) {
-    console.log('He Авторизован 1');
+    console.log("He Авторизован");
 } else if (error.response.data && error.response.data.message) {
     showNotification(error.response.data.message);
 } else {

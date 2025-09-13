@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import store from './store/redux-store.jsx';
 import CardID from './pages/CardsPage/CardID/CardID.jsx';
 import RegPage from './pages/RegistrationPage/RegPage.jsx';
+import Login from './pages/Login/Login.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/cards' element={<CardsPage />}/>
         <Route path='/cards/:id' element={<CardID/>}/>
         <Route path='/register' element={<RegPage/>}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
       </Routes>
         <Footer />

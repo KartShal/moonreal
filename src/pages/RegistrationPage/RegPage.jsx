@@ -27,8 +27,13 @@ const RegPage = () => {
             password,
         };
 
-        registerPost(data).then((res) => localStorage.setItem("user", res.data.user.email));
-        navigate("/");
+        registerPost(data).then((res) => {
+            localStorage.setItem("user", res.data.user.email)
+            if (res.status === 200 || res.status === 201) {
+            navigate("/")
+        }
+        });
+        
     }
     return (
         <>

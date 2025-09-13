@@ -61,6 +61,21 @@
       "email": "emal@gmail.com",
       "password": "$2a$10$MaF9VxwTcjekQSTRJJanb.n/a2x1dfbhsra0dHSBqRdFlGa2psuRG",
       "id": 2
+    },
+    {
+      "email": "esmo@gmail.com",
+      "password": "$2a$10$iSSNMMP5IhyEN4sS1B1Qd.HQhWPwHYm42yPa84rnv8nhlY1ZyaMyW",
+      "id": 3
+    },
+    {
+      "email": "xesmo@gmail.com",
+      "password": "$2a$10$DTcGj6.x/hkWTG3YqXYpVesYnM30niyBvDPSrPcs5ATim2Z0B8sGq",
+      "id": 4
+    },
+    {
+      "email": "Resmo@gmail.com",
+      "password": "$2a$10$85yn1LYWJX1r13NU48PUXewWY3lLFtxq8UhHMFAitCoMrsvkMNAHG",
+      "id": 5
     }
   ]
 }
