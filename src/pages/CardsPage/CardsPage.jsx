@@ -4,6 +4,7 @@ import Card from './components/Card/Card';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHomes, postHome } from './service/service';
 import { getHomesActionCreater } from '../../store/reducer/homereducer';
+import { withRedirect } from '../../HOC/HOC';
 
 function CardPage({store}) {
 
@@ -77,4 +78,4 @@ function CardPage({store}) {
     )
 }
 
-export default CardPage;
+export default withRedirect(CardPage);
